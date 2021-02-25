@@ -109,9 +109,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ChessPGNAnalysis\ChessPGNAnalysis.csproj">
+    <ProjectReference Include="..\ChessPGNAnalysis\ChessPGNAnalysis.Api.csproj">
       <Project>{9D33D045-DF59-45D5-AA6F-7D4C4985D970}</Project>
-      <Name>ChessPGNAnalysis</Name>
+      <Name>ChessPGNAnalysis.Api</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

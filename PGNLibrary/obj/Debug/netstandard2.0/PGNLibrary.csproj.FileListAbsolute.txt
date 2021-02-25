@@ -1,0 +1,9 @@
+C:\Users\William\source\repos\ChessPGNAnalysis\PGNLibrary\bin\Debug\netstandard2.0\PGNLibrary.deps.json
+C:\Users\William\source\repos\ChessPGNAnalysis\PGNLibrary\bin\Debug\netstandard2.0\PGNLibrary.dll
+C:\Users\William\source\repos\ChessPGNAnalysis\PGNLibrary\bin\Debug\netstandard2.0\PGNLibrary.pdb
+C:\Users\William\source\repos\ChessPGNAnalysis\PGNLibrary\obj\Debug\netstandard2.0\PGNLibrary.csprojAssemblyReference.cache
+C:\Users\William\source\repos\ChessPGNAnalysis\PGNLibrary\obj\Debug\netstandard2.0\PGNLibrary.csproj.CoreCompileInputs.cache
+C:\Users\William\source\repos\ChessPGNAnalysis\PGNLibrary\obj\Debug\netstandard2.0\PGNLibrary.AssemblyInfoInputs.cache
+C:\Users\William\source\repos\ChessPGNAnalysis\PGNLibrary\obj\Debug\netstandard2.0\PGNLibrary.AssemblyInfo.cs
+C:\Users\William\source\repos\ChessPGNAnalysis\PGNLibrary\obj\Debug\netstandard2.0\PGNLibrary.dll
+C:\Users\William\source\repos\ChessPGNAnalysis\PGNLibrary\obj\Debug\netstandard2.0\PGNLibrary.pdb
