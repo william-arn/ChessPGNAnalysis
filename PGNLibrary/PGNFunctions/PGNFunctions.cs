@@ -32,7 +32,9 @@ namespace PGNLibrary
 
         private static string ExtractFileName(string content)
         {
-            Regex fileNameRegex = new Regex(@"filename=\\" + @"(?<FileName>[^\\]+\.(?<FileExtension>[a - z]+))\\",
+            //Regex fileNameRegex = new Regex(@"filename=\""" + @"(?<FileName>[^\]+\.(?<FileExtension>[a-z]+))\",
+                //RegexOptions.Compiled | RegexOptions.IgnoreCase);
+            Regex fileNameRegex = new Regex(@"filename=\""(?<FileName>[^\\]+?\.(?<FileExtension>[a-z]+))",
                 RegexOptions.Compiled | RegexOptions.IgnoreCase);
             Match match = fileNameRegex.Match(content);
             return match.Groups["FileName"].Value;
@@ -46,7 +48,7 @@ namespace PGNLibrary
 
         private static ChessGame ParseChessGame(string content)
         {
-            Regex fileNameRegex = new Regex(@"filename=\\" + @"(?<FileName>[^\\]+\.(?<FileExtension>[a - z]+))\\",
+            Regex fileNameRegex = new Regex(@"filename=\\""" + @"(?<FileName>[^\\]+\.(?<FileExtension>[a-z]+))\\",
                 RegexOptions.Compiled | RegexOptions.IgnoreCase);
             Match match = fileNameRegex.Match(content);
 
