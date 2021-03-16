@@ -32,8 +32,6 @@ namespace PGNLibrary
 
         private static string ExtractFileName(string content)
         {
-            //Regex fileNameRegex = new Regex(@"filename=\""" + @"(?<FileName>[^\]+\.(?<FileExtension>[a-z]+))\",
-                //RegexOptions.Compiled | RegexOptions.IgnoreCase);
             Regex fileNameRegex = new Regex(@"filename=\""(?<FileName>[^\\]+?\.(?<FileExtension>[a-z]+))",
                 RegexOptions.Compiled | RegexOptions.IgnoreCase);
             Match match = fileNameRegex.Match(content);
@@ -41,8 +39,9 @@ namespace PGNLibrary
         }
         private static MatchCollection ExtractAllGames(string content)
         {
-            Regex gameTextRegex = new Regex(@"\[Event.+?\\n\\n\\n",
+            Regex gameTextRegex = new Regex(@"\[Event([^$]+?)\n\n\n",
                 RegexOptions.Compiled | RegexOptions.IgnoreCase);
+            var matches = gameTextRegex.Matches(content);
             return gameTextRegex.Matches(content);
         }
 
